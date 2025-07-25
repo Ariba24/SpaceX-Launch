@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SpaceX Launch Tracker</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Space+Mono:wght@400;700&display=swap">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-overlay">
+      <h1>SpaceX Launch Tracker</h1>
+      <p>Track SpaceX missions in real time as humanity reaches for the stars</p>
+    </div>
+  </header>
+
+  <!-- Tabs -->
+  <nav class="tabs">
+    <button class="tab-btn active" data-target="latest">Latest Launch</button>
+    <button class="tab-btn" data-target="upcoming">Upcoming Launches</button>
+    <button class="tab-btn" data-target="past">Past Launches</button>
+    <button class="tab-btn" data-target="fleet">Rocket Fleet</button>
+    <button class="tab-btn" data-target="stats">Mission Stats</button>
+  </nav>
+
+  <main>
+    <!-- Latest Launch -->
+    <section id="latest" class="tab-section active">
+      <div id="latest-launch" class="launch-card">
+        <div class="loading"></div>
+        <h2>Loading latest launch data...</h2>
+      </div>
+    </section>
+
+    <!-- Upcoming Launches -->
+    <section id="upcoming" class="tab-section">
+      <h2>Upcoming Launches</h2>
+      <div id="upcoming-launches">
+        <div class="loading"></div>
+        <p>Loading upcoming launches...</p>
+      </div>
+    </section>
+
+    <!-- Past Launches -->
+    <section id="past" class="tab-section">
+      <h2>Past Launches</h2>
+      <div id="past-launches">
+        <div class="loading"></div>
+        <p>Loading past launches...</p>
+      </div>
+    </section>
+
+    <!-- Fleet -->
+<section id="fleet" class="tab-section">
+  <h2>SpaceX Rocket Fleet</h2>
+  <div class="fleet-container">
+    <div class="fleet-card">
+      <h3>Falcon 9</h3>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Falcon_9_block_5_launch.jpg" alt="Falcon 9">
+      <p>The Falcon 9 is a reusable, two-stage rocket designed and manufactured by SpaceX for the reliable and safe transport of people and payloads into Earth orbit and beyond.</p>
+      <p><strong>First flight:</strong> June 4, 2010</p>
+      <p><strong>Height:</strong> 70 m (229.6 ft)</p>
+    </div>
+    <div class="fleet-card">
+      <h3>Falcon Heavy</h3>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/2b/Falcon_Heavy_Demo_Mission_%2840078479375%29.jpg" alt="Falcon Heavy">
+      <p>Falcon Heavy is the most powerful operational rocket in the world by a factor of two. With the ability to lift into orbit nearly 64 metric tons (141,000 lb).</p>
+      <p><strong>First flight:</strong> February 6, 2018</p>
+      <p><strong>Height:</strong> 70 m (229.6 ft)</p>
+    </div>
+    <div class="fleet-card">
+      <h3>Starship</h3>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/1f/Starship_SN9_landing_attempt.jpg" alt="Starship">
+      <p>Starship is a fully reusable, super heavy-lift launch vehicle under development by SpaceX, designed to carry both crew and cargo to Earth orbit, the Moon, Mars, and other destinations.</p>
+      <p><strong>First flight:</strong> In development</p>
+      <p><strong>Height:</strong> 120 m (394 ft)</p>
+    </div>
+  </div>
+</section>
+    <!-- Stats -->
+    <section id="stats" class="tab-section">
+      <h2>SpaceX Mission Statistics</h2>
+      <div class="stat-card">
+        <h3>Total Launches</h3>
+        <p id="total-launches">Loading...</p>
+      </div>
+      <div class="stat-card">
+        <h3>Successful Landings</h3>
+        <p id="total-landings">Loading...</p>
+      </div>
+      <div class="stat-card">
+        <h3>Reflown Rockets</h3>
+        <p id="total-reflights">Loading...</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Data provided by SpaceX API | &copy; 2023 SpaceX Launch Tracker</p>
+    <p>Made with <span style="color: #ff4d4d;">♥</span> for space exploration</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
