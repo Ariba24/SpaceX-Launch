@@ -110,4 +110,5 @@ Google Fonts – typography
 Built with 💻 by Ariba Arzi
 Feel free to reach out with suggestions, collaborations, or just to say hi!
 📧 Email:aribaarzi22@gmail.com
+
 💼 LinkedIn:www.linkedin.com/in/aribaarzi2207
