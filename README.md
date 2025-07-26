@@ -109,3 +109,4 @@ Google Fonts – typography
 📬 Contact
 Built with 💻 by Ariba Arzi
 Feel free to reach out with suggestions, collaborations, or just to say hi!
+💼 LinkedIn:
